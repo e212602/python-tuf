@@ -11,7 +11,7 @@ live repository by adding new target files periodically.
 
 import argparse
 import logging
-import sys
+import sys,os
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from time import time
