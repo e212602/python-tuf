@@ -97,6 +97,10 @@ class SimpleRepository(Repository):
         for role in ["timestamp", "snapshot", "targets"]:
             with self.edit(role):
                 pass
+        
+        print(self.role_cache)
+        print(self.signer_cache)
+        print(self.target_cache)
 
     @property
     def targets_infos(self) -> Dict[str, MetaFile]:
